@@ -1,0 +1,226 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+    background-color: white;
+}
+
+#header {
+    background-color: #21E1E1;
+    padding-bottom: 5%;
+}
+
+#about {
+    background-color: #FFD8A9;
+    padding-top: 3%;
+}
+
+#projects {
+    background-color: #21E1E1;
+    padding: 2% 0 3%;
+}
+
+#footer {
+    background-color: #FFD8A9;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("images/footer-img.PNG");
+}
+
+/* Navbar */
+
+.navbar {
+    padding-top: 2%;
+    background-color: #7FB77E;
+    width: 500px;
+    margin-left: 15%;
+    border-top: 0;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border: 10px;
+}
+
+.me-auto {
+    padding-left: 28%;
+}
+
+.nav-link {
+    margin-right: 50px;
+    display: list-item;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: lightcyan;
+}
+
+/* Buttons */
+
+.download-button {
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    color: black;
+}
+
+/* Title */
+
+.title {
+    position: relative;
+    top: 250px;
+    left: 200px;
+}
+
+h1 {
+    font-family: "Dancing Script";
+    font-size: 7rem;
+}
+
+.header-name {
+    font-family: "Montaga";
+    font-size: 5rem;
+    position: relative;
+    right: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-icons {
+    position: relative;
+    left: 22%;
+    padding-top: 1%;
+    transform-origin: left top;
+    transform: scale(4);
+}
+
+.contact-icon {
+    margin: auto 3px;
+}
+
+/* Carousel */
+
+.header-img {
+    width: 500px;
+    height: 830px;
+    position: relative;
+    left: 25%;
+}
+
+.header-img-3 {
+    width: 450px;
+    height: 830px;
+    position: relative;
+    left: 30%;
+}
+
+.control-button {
+    filter: invert(100%);
+}
+
+/* Cloud */
+
+.cloud1 {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    width: 300px;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 300px;
+}
+
+/* About */
+
+.about-img {
+    position: relative;
+    top: 140px;
+    left: 300px;
+    transform: scale(2);
+}
+
+.about-title {
+    padding: 0 0 10% 20%;
+    font-family: "Montaga";
+    font-size: 3rem;
+}
+
+.about-info {
+    display: inline-block;
+    width: 70%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+/* Projects */
+
+.projects-title {
+    text-align: center;
+    font-family: "Montaga";
+    font-size: 4rem;
+}
+
+.projects-header {
+    text-align: center;
+    padding: 1% 0 3%;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.see-more-button-text {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.see-more-button {
+    border-radius: 50%;
+    display: inline;
+    width: 40px;
+    height: 40px;
+}
+
+.see-more-text {
+    display: inline;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.more-cards {
+    display: none;
+}
+
+.project-image-1 {
+    height: 140px;
+}
+
+.project-image-2 {
+    height: 110px;
+}
+
+.project-image-5 {
+    height: 435px;
+}
+
+.card-bottom {
+    margin-top: 5%; 
+}
+
+/* Footer */
+
+.footer-text {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #123650;
+    font-weight: bold;
+}
