@@ -14,3 +14,8 @@ $(".see-more-button").on("click", () => {
     }
     counter++;
 })
+
+$(document).ready(() => {
+    var currentYear = new Date().getFullYear();
+    $(".year").text(currentYear);
+})
