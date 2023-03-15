@@ -45,19 +45,19 @@
     <section id="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
@@ -75,11 +75,16 @@
         </button>
       </a>
 
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
+      <div class="intro">
+        <div class="leftIntro">
+          <img class="cloud1" src="images/cloud.png" alt="cloud-img" />
           <div class="title">
-            <h2 class="header-name">Hi, I'm</h2>
-            <h1>Anish Khurana</h1>
+            <h2 class="header-title">Hi, I'm</h2>
+            <h1 class="header-name">
+              <span class="firstname">Anish</span>
+              <span class="lastname">Khurana</span>
+            </h1>
+
             <div class="contact-icons">
               <a href="https://github.com/programmer812" target="_blank">
                 <i class="fa-brands fa-square-github contact-icon"></i>
@@ -95,12 +100,13 @@
               </a>
             </div>
           </div>
+          <img class="cloud2" src="images/cloud.png" alt="cloud-img" />
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="rightIntro">
           <div
             id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-interval="4000"
+            class="carousel slide carousel-imgs"
+            data-bs-interval="3000"
             data-bs-ride="carousel"
             data-bs-touch="true"
           >
@@ -122,12 +128,12 @@
               <div class="carousel-item">
                 <img
                   src="images/header-imgs/header-img3.PNG"
-                  class="d-block header-img-3"
+                  class="d-block header-img"
                   alt="me-at-a-winery-img"
                 />
               </div>
             </div>
-            <button
+            <!-- <button
               class="carousel-control-prev control-button"
               type="button"
               data-bs-target="#carouselExampleControls"
@@ -150,25 +156,22 @@
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
-
-      <img class="cloud1" src="images/cloud.png" alt="cloud-img" />
-      <img class="cloud2" src="images/cloud.png" alt="cloud-img" />
     </section>
 
     <section id="about">
       <div class="row">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 about-left">
           <img
             class="about-img"
             src="images/about-imgs/about-me-img1-cropped.png"
             alt="me-at-calgary-tower-img"
           />
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 about-right">
           <h2 class="about-title">Who am I?</h2>
           <p class="about-info">
             Hi, I'm Anish Khurana and I currently study Software Engineering at
@@ -178,8 +181,7 @@
           </p>
           <br />
           <p class="about-info">
-            In my free time, I usually play cricket or ponder upon the next
-            destination that I should travel to.
+            In my free time, I can usually be found playing cricket or watching the latest hits.
           </p>
         </div>
       </div>
@@ -202,8 +204,8 @@
               <p class="card-text">
                 During my first work term, my team and I chose to work with
                 eButterfly and developed two functional websites for them. We
-                used TypeScript and React on the frontend while Node JS was
-                utilized to build the RESTful API.
+                used TypeScript and React on the frontend while Python's Fast API was
+                utilized to develop the server.
               </p>
             </div>
           </div>
@@ -267,7 +269,7 @@
       <div class="extra-cards more-cards">
         <div class="row">
           <div class="col-lg-4 col-md-6">
-            <div class="card">
+            <div class="card card-4">
               <img
                 src="images/project-imgs/project-img-4.PNG"
                 class="card-img-top project-image-4"

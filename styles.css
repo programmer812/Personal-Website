@@ -1,9 +1,6 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
-
-body {
     color: black;
     background-color: white;
 }
@@ -15,18 +12,18 @@ body {
 
 #about {
     background-color: #FFD8A9;
-    padding-top: 3%;
+    padding: 3% 0;
+    display: flex;
 }
 
 #projects {
     background-color: #21E1E1;
-    padding: 2% 0 3%;
+    padding: 3% 0;
 }
 
 #footer {
     background-color: #FFD8A9;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 3% 0;
     background-image: url("images/footer-img.PNG");
 }
 
@@ -37,20 +34,19 @@ body {
     background-color: #7FB77E;
     width: 500px;
     margin-left: 15%;
-    border-top: 0;
-    border-bottom-left-radius: 110px;
-    border-bottom-right-radius: 110px;
-    border: 10px;
+    /* border-top: 0; */
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* border: 10px; */
 }
 
-.me-auto {
-    padding-left: 28%;
+.navbar-nav {
+    margin-left: 8%;
+    padding-bottom: 10px;
 }
 
 .nav-link {
     margin-right: 50px;
-    display: list-item;
-    padding-bottom: 30px;
     font-size: 1.2rem;
 }
 
@@ -62,29 +58,50 @@ body {
 
 .download-button {
     position: absolute;
-    top: 35px;
-    right: 100px;
+    top: 3%; /* 35px */
+    right: 5%; /* 100px */
     color: black;
 }
 
 /* Title */
 
-.title {
-    position: relative;
-    top: 250px;
-    left: 200px;
+.intro {
+    display: flex;
 }
 
-h1 {
-    font-family: "Dancing Script";
-    font-size: 7rem;
+.leftIntro {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.cloud1 {
+    align-self: flex-start;
+    /* position: relative;
+    top: 10%;
+    left: 5%; */
+    width: 300px;
+}
+
+.title {
+    align-self: center;
+    /* position: relative; */
+    /* top: 20%; 250px */
+    /* left: 25%; 200px */
+    /* height: 100%; */
+}
+
+.header-title {
+    font-family: "Montaga";
+    font-size: 5rem;
+    /* position: relative;
+    right: 3%; 30px */
 }
 
 .header-name {
-    font-family: "Montaga";
-    font-size: 5rem;
-    position: relative;
-    right: 30px;
+    font-family: "Dancing Script";
+    font-size: 7rem;
 }
 
 a {
@@ -93,64 +110,68 @@ a {
 }
 
 .contact-icons {
-    position: relative;
-    left: 22%;
-    padding-top: 1%;
     transform-origin: left top;
     transform: scale(4);
+    position: relative;
+    left: 30%;
 }
 
 .contact-icon {
     margin: auto 3px;
 }
 
-/* Carousel */
-
-.header-img {
-    width: 500px;
-    height: 830px;
-    position: relative;
-    left: 25%;
+.cloud2 {
+    align-self: flex-end;
+    /* position: absolute;
+    top: 70%;
+    left: 44%; */
+    width: 300px;
 }
 
-.header-img-3 {
-    width: 450px;
-    height: 830px;
-    position: relative;
-    left: 30%;
+/* Carousel */
+
+.rightIntro {
+    flex: 1;
+}
+
+.header-img {
+    width: 500px; /* 500px */
+    height: 830px; /* 830px */
+    display: block;
+    margin: 0 auto;
+    /* position: relative;
+    left: 25%; */
 }
 
 .control-button {
     filter: invert(100%);
 }
 
-/* Cloud */
-
-.cloud1 {
-    position: absolute;
-    top: 20%;
-    left: 4%;
-    width: 300px;
-}
-
-.cloud2 {
-    position: absolute;
-    top: 70%;
-    left: 45%;
-    width: 300px;
-}
-
+/* Modify the About Section */
 /* About */
 
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-img {
-    position: relative;
-    top: 140px;
-    left: 300px;
     transform: scale(2);
+    margin-bottom: 5%;
+    /* position: relative;
+    top: 140px;
+    left: 300px; */
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-title {
-    padding: 0 0 10% 20%;
+    /* padding: 0 0 5% 20%; */
     font-family: "Montaga";
     font-size: 3rem;
 }
@@ -193,7 +214,6 @@ a {
 .see-more-text {
     display: inline;
     padding-left: 5px;
-    padding-top: 5px;
 }
 
 .more-cards {
@@ -223,4 +243,115 @@ a {
     text-align: center;
     color: #123650;
     font-weight: bold;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1400px) {
+    .cloud1 {
+        align-self: center;
+        width: 300px;
+    }
+    .cloud2 {
+        align-self: center;
+        width: 300px;
+        padding-top: 7%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header-title {
+        text-align: center;
+    }
+    .header-name {
+        text-align: center;
+    }
+}
+
+@media(max-width: 1030px) {
+    .intro {
+        flex-direction: column;
+    }
+    .cloud1 {
+        align-self: flex-start;
+        width: 300px;
+        padding-left: 3%;
+    }
+    .cloud2 {
+        align-self: flex-end;
+        width: 300px;
+        padding-bottom: 5%;
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        margin: 0 0 3% 7%;
+    }
+    .about-left {
+        position: relative;
+        top: 12%;
+        padding-bottom: 24%;
+    }
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        margin-left: 20%;
+    }
+    .download-button {
+        position: absolute;
+        right: 25%;
+        top: 1.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-left {
+        padding-bottom: 30%;
+    }
+    .download-button {
+        position: absolute;
+        right: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .download-button {
+        position: absolute;
+        top: 0.7%;
+        right: 15%;
+    }
+    .cloud1 {
+        align-self: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .contact-icons {
+        position: relative;
+        left: 15%;
+    }
+    .cloud2 {
+        align-self: center;
+        margin-top: 10%;
+    }
+    .header-img {
+        width: 90%;
+    }
+    .about-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img {
+        transform: scale(1.5);
+        position: relative;
+        bottom: 20%;
+        padding-bottom: 5%;
+    }
 }
