@@ -236,6 +236,11 @@ a {
     margin-top: 5%; 
 }
 
+.link-text {
+    color: #03a9ff;
+    text-decoration: underline;
+}
+
 /* Footer */
 
 .footer-text {
