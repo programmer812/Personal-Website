@@ -2,11 +2,11 @@ import { Button, Card, Container, Row } from 'react-bootstrap';
 import Colors from '../Colors';
 
 const Projects = () => {
-    const ProjectCard = ({ img_width, img_height, img_url, img_alt, name, description, project_url, embed_type }) => {
+    const ProjectCard = ({ img_width, img_height, objectFit, img_url, img_alt, name, description, project_url, embed_type }) => {
         return (
             <Card className='w-[30%]'>
                 <Card.Img 
-                    style={{ width: img_width, height: img_height }} 
+                    style={{ width: img_width, height: img_height, ...(objectFit && { objectFit: objectFit }) }} 
                     className='self-center' 
                     variant="top" 
                     src={img_url} 
@@ -15,15 +15,15 @@ const Projects = () => {
                 <Card.Body>
                     <Card.Title className='text-center'>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
-                    <Button
-                        className='w-full mt-3'
-                        variant="primary" 
-                        href={project_url}
-                        target="_blank"
-                    >
-                        View on {embed_type}
-                    </Button>
                 </Card.Body>
+                <Button
+                    className='w-full mb-4'
+                    variant="primary" 
+                    href={project_url}
+                    target="_blank"
+                >
+                    View on {embed_type}
+                </Button>
             </Card>
         )
     }
@@ -49,19 +49,20 @@ const Projects = () => {
                         img_url="/images/trivia-king-img.png"
                         img_alt="Trivia King App"
                         name="Trivia King"
-                        description="This is a trivia app which was created using React Native and Expo Go. It is currently released on the Google Play Store where the users can attempt quizzes over multiple topics and their scores will be recorded in the device’s internal storage."
-                        project_url="https://play.google.com/store/apps/details?id=com.anish.k.TriviaKing"
-                        embed_type="Google Play"
+                        description="This is a trivia app which was created using React Native and Expo Go, where users can attempt quizzes over multiple topics and their scores will be recorded in the device’s internal storage."
+                        project_url="https://github.com/programmer812/Trivia-App"
+                        embed_type="GitHub"
                     />
                 </Row>
                 <Row className='justify-center gap-16 mb-32'>
                     <ProjectCard
                         img_width="100%"
-                        img_height="50%"
+                        img_height="200px"
+                        objectFit="contain"
                         img_url="/images/blog-website.PNG"
                         img_alt="Blog Website Homepage"
                         name="Blog Website"
-                        description="This website was made using EJS and CSS for the frontend and Node JS to design the server and API. As well, MongoDB was utilized to store data in a database due to its versatility with Node JS."
+                        description="This website was made using EJS and CSS for the frontend and Node.js to design the server and API. As well, MongoDB was utilized for the database due to its versatility with Node.js."
                         project_url="https://github.com/programmer812/Blog-Website"
                         embed_type="GitHub"
                     />
