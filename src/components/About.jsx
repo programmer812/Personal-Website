@@ -12,7 +12,7 @@ const About = () => {
                 <h1 className="text-[90px]">A bit about myself...</h1>
                 <div className="flex flex-col items-center space-y-10">
                     <p className="text-[30px] text-center">
-                        Hi, I'm Anish Khurana and I currently study Software Engineering at the University of Waterloo. I am really passionate about coding and always enjoy learning more about AI and Robotics. Additionally, I am an avid traveler, having visited over 10 countries and I&apos;m also a huge fan of cricket and hockey. Feel free to connect with me!
+                        Hi, I'm Anish Khurana and I am a Software Engineering graduate from the University of Waterloo. I am really passionate about coding and always enjoy learning more about AI and Robotics. Additionally, I am an avid traveler, having visited over 10 countries and I&apos;m also a huge fan of cricket and hockey. Feel free to connect with me!
                     </p>
                     <div className="flex flex-row space-x-10">
                         <a href="https://github.com/programmer812" target="_blank">

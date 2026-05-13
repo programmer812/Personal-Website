@@ -38,7 +38,7 @@ const Projects = () => {
                         img_height="50%"
                         img_url="/images/powercode-img.png"
                         img_alt="Power Code Homepage"
-                        name="PowerCode"
+                        name="Power Code"
                         description="This is a 1v1 multiplayer coding game that my team and I developed for Hack the North. We utilized React and Material UI to implement the frontend and deployed the backend server on Convex. The code checks are performed by a FastAPI server that is hosted on Heroku."
                         project_url="https://devpost.com/software/power-code"
                         embed_type="Devpost"
