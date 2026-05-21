@@ -34,6 +34,16 @@ const Projects = () => {
             <Container fluid className='pt-32'>
                 <Row className='justify-center gap-16 mb-32'>
                     <ProjectCard
+                        img_width="30%"
+                        img_height="50%"
+                        img_url="/images/accesswise-img.jpg"
+                        img_alt="AccessWise Map"
+                        name="AccessWise"
+                        description="AccessWise is a full-stack accessibility mapping platform that my team and I developed for our university capstone project. We leveraged computer vision to analyze public imagery and detect urban features, enabling scalable evaluation of campus accessibility."
+                        project_url="https://github.com/programmer812/AccessWise"
+                        embed_type="GitHub"
+                    />
+                    <ProjectCard
                         img_width="100%"
                         img_height="50%"
                         img_url="/images/powercode-img.png"
@@ -43,6 +53,8 @@ const Projects = () => {
                         project_url="https://devpost.com/software/power-code"
                         embed_type="Devpost"
                     />
+                </Row>
+                <Row className='justify-center gap-16 mb-32'>
                     <ProjectCard
                         img_width="45%"
                         img_height="50%" 
@@ -51,6 +63,16 @@ const Projects = () => {
                         name="Trivia King"
                         description="This is a trivia app which was created using React Native and Expo Go, where users can attempt quizzes over multiple topics and their scores will be recorded in the device’s internal storage."
                         project_url="https://github.com/programmer812/Trivia-App"
+                        embed_type="GitHub"
+                    />
+                    <ProjectCard
+                        img_width="50%"
+                        img_height="50%" 
+                        img_url="/images/latex-converter-img.PNG"
+                        img_alt="Math Notes to Latex Converter"
+                        name="Math Notes to Latex Converter"
+                        description="This is a latex converter that my group and I developed for a course project. We used Raspberry PI to capture the images that would then be sent to the API which would convert the image text into LaTeX code."
+                        project_url="https://github.com/rohanvedula/PaZaR"
                         embed_type="GitHub"
                     />
                 </Row>
@@ -67,18 +89,6 @@ const Projects = () => {
                         embed_type="GitHub"
                     />
                     <ProjectCard
-                        img_width="50%"
-                        img_height="50%" 
-                        img_url="/images/latex-converter-img.PNG"
-                        img_alt="Math Notes to Latex Converter"
-                        name="Math Notes to Latex Converter"
-                        description="This is a latex converter that my group and I developed for a course project. We used Raspberry PI to capture the images that would then be sent to the API which would convert the image text into LaTeX code."
-                        project_url="https://github.com/rohanvedula/PaZaR"
-                        embed_type="GitHub"
-                    />
-                </Row>
-                <Row className='justify-center gap-16 mb-32'>
-                    <ProjectCard
                         img_width="70%"
                         img_height="60%"
                         img_url="/images/realm-rush-img.PNG"
@@ -88,6 +98,8 @@ const Projects = () => {
                         project_url="https://github.com/programmer812/Realm-Rush-Game"
                         embed_type="GitHub"
                     />
+                </Row>
+                <Row className='justify-center gap-16 mb-32'>
                     <ProjectCard
                         img_width="60%"
                         img_height="60%" 
